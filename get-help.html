@@ -122,5 +122,20 @@
     </main>
 
     <script src="js/script.js"></script>
+    <script>
+    // Automatically forwards browser URL parameter data down inside your Typebot window frame container
+    document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const service = urlParams.get('serviceType');
+        if (service) {
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                // Rewrites the target source to prefill the variable data
+                iframe.src = "https://typebot.co" + encodeURIComponent(service);
+            }
+        }
+    });
+</script>
+
 </body>
 </html>
