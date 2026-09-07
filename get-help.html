@@ -132,7 +132,7 @@
             if (iframe) {
                 if (service) {
                     // Correctly appends the serviceType string without messing up the protocol headers
-                    iframe.src = "https://typebot.co/my-typebot-4msduqt" + encodeURIComponent(service);
+                    iframe.src = "https://typebot.co/my-typebot-4msduqt?serviceType" + encodeURIComponent(service);
                 } else {
                     // Guarantees your standard production chatbot URL loads if a user navigates here directly
                     iframe.src = "https://typebot.co/my-typebot-4msduqt";
