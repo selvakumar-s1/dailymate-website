@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Help - DailyMate</title>
+    <title>DailyMate - Everyday help, made simple.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤝</text></svg>">
     
-    <!-- PREMIUM BRANDED ANIMATION UI SYSTEM -->
+    <!-- PREMIUM BRANDED ANIMATION & RESPONSIVE UI SYSTEM -->
     <style>
         .animate-nav-link {
             position: relative;
@@ -37,14 +37,33 @@
             box-shadow: 0 10px 20px rgba(255, 107, 0, 0.4) !important;
             background: #e05e00 !important;
         }
+        
+        /* RESPONSIVE RESPONSIVENESS OVERRIDES FOR MOBILE SCREEN VIEWS */
+        @media (max-width: 640px) {
+            .responsive-nav {
+                flex-direction: column !important;
+                gap: 16px !important;
+                text-align: center !important;
+                padding-bottom: 8px !important;
+            }
+            .responsive-menu {
+                justify-content: center !important;
+                flex-wrap: wrap !important;
+                gap: 16px !important;
+                padding: 0 !important;
+            }
+            .responsive-hero-title {
+                font-size: 38px !important;
+            }
+        }
     </style>
     <script defer src="https://umami.is" data-website-id="463b9ab1-f772-42ed-bf40-f2116ed38c95"></script>
 </head>
 <body style="margin: 0; padding: 0; background: radial-gradient(circle at top right, rgba(255, 158, 0, 0.08), transparent 45%), radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.04), transparent 50%), #fafbfe; min-height: 100vh;">
 
-    <!-- ANIMATED GLASS-MORPHIC NAVIGATION HEADER -->
-    <header style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(229, 231, 235, 0.5); padding: 16px 24px;">
-        <nav style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+    <!-- MOBILE-ADAPTIVE BRANDING HEADER -->
+    <header style="background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(229, 231, 235, 0.5); padding: 16px 24px;">
+        <nav class="responsive-nav" style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; transition: all 0.3s ease;">
             <!-- PREMIUM INLINE CODE EMBED VECTOR LOGO -->
             <a href="index.html" style="display: flex; align-items: center; gap: 10px; text-decoration: none; font-family: system-ui, -apple-system, sans-serif;">
                 <svg width="36" height="36" viewBox="0 0 32 32" fill="none" xmlns="http://w3.org" style="filter: drop-shadow(0 4px 6px rgba(255, 107, 0, 0.2));">
@@ -60,67 +79,47 @@
                 </svg>
                 <span style="font-weight: 800; font-size: 24px; color: #111827; letter-spacing: -0.5px;">Daily<span style="color: #ff6b00;">Mate</span></span>
             </a>
-            <ul style="display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; font-family: system-ui, sans-serif;">
-                <li><a href="index.html" class="animate-nav-link" style="color: #4b5563; font-weight: 500; text-decoration: none; font-size: 15px;">Home</a></li>
-                <li><a href="index.html#service-catalog-container" class="animate-nav-link" style="color: #4b5563; font-weight: 500; text-decoration: none; font-size: 15px;">Services</a></li>
+            <ul class="responsive-menu" style="display: flex; align-items: center; gap: 32px; list-style: none; margin: 0; padding: 0; font-family: system-ui, sans-serif;">
+                <li><a href="index.html" style="color: #ff6b00; font-weight: 600; text-decoration: none; font-size: 15px;">Home</a></li>
                 <li><a href="how-it-works.html" class="animate-nav-link" style="color: #4b5563; font-weight: 500; text-decoration: none; font-size: 15px;">How It Works</a></li>
                 <li><a href="about.html" class="animate-nav-link" style="color: #4b5563; font-weight: 500; text-decoration: none; font-size: 15px;">About</a></li>
-                <li><a href="get-help.html" class="cta-hover-effect" style="background: #ff6b00; color: white; padding: 10px 22px; font-weight: 600; border-radius: 9999px; text-decoration: none; font-size: 15px; box-shadow: 0 4px 14px rgba(255, 107, 0, 0.25);">Get Help</a></li>
+                <li><a href="get-help.html" class="cta-hover-effect" style="background: #ff6b00; color: white; padding: 10px 22px; font-weight: 600; border-radius: 9999px; text-decoration: none; font-size: 15px; box-shadow: 0 4px 14px rgba(255, 107, 0, 0.25); white-space: nowrap; display: inline-block;">Get Help</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- CONTENT BODY LAYER -->
-    <main style="font-family: system-ui, -apple-system, sans-serif; padding: 60px 24px 80px 24px;">
-        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <h1 style="font-size: 36px; font-weight: 800; color: #111827; margin: 0 0 30px 0; letter-spacing: -0.5px;">Tell DailyMate what you need</h1>
-        </div>
-
-        <!-- CONVERSATIONAL ENGINE MASK CONTAINER -->
-        <div style="width: 100%; max-width: 600px; margin: 0 auto; padding: 0 10px;">
-            <div style="width: 100%; height: 535px; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05); border: 1px solid #e5e7eb; position: relative;">
-                <iframe 
-                    src="https://typebot.co" 
-                    style="width: 100%; height: 600px; border: none; position: absolute; top: 0; left: 0;" 
-                    allow="geolocation; microphone; camera">
-                </iframe>
-            </div>
-        </div>
-
-        <!-- PRICING & PAYMENT TRANSPARENCY CARD -->
-        <div style="width: 100%; max-width: 600px; margin: 40px auto 0 auto; padding: 0 10px;">
-            <div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 32px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-                    <span style="font-size: 24px;">💳</span>
-                    <h3 style="font-size: 20px; color: #111827; margin: 0; font-weight: 700;">Simple, Flat-Rate Pricing</h3>
-                </div>
-                
-                <p style="color: #4b5563; font-size: 15px; line-height: 1.6; margin: 0 0 24px 0;">
-                    At DailyMate, we believe getting help should be completely straightforward. Once you complete your request with our conversational assistant above, our operations team calculates your flat quote based on our local neighborhood rates:
-                </p>
-
-                <div style="display: flex; flex-direction: column; gap: 16px; border-top: 1px solid #f3f4f6; padding-top: 20px;">
-                    <div style="display: flex; gap: 12px;">
-                        <span style="color: #ff6b00; font-weight: bold;">Step 1:</span>
-                        <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Receive an instant flat quote via email from help@dailymate.com.au</p>
-                    </div>
-                    <div style="display: flex; gap: 12px;">
-                        <span style="color: #ff6b00; font-weight: bold;">Step 2:</span>
-                        <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Reply YES to confirm your matched local neighborhood assistant.</p>
-                    </div>
-                    <div style="display: flex; gap: 12px;">
-                        <span style="color: #ff6b00; font-weight: bold;">Step 3:</span>
-                        <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Task completed perfectly! Pay securely via fee-free Direct Bank Transfer.</p>
-                    </div>
-                </div>
-
-                <div style="margin-top: 24px; background: #fff7ed; border-radius: 12px; padding: 16px; border: 1px solid #ffedd5; text-align: center;">
-                    <span style="font-size: 14px; color: #c2410c; font-weight: 600;">🔒 Peace of Mind Guarantee: No hidden sign-up fees or subscription lock-ins.</span>
+    <!-- MAIN HOMEPAGE WRAPPER -->
+    <main style="font-family: system-ui, -apple-system, sans-serif;">
+        <!-- MODERN HIGH-CONVERSION HERO SECTION WITH NO SUB-BUTTONS -->
+        <section style="padding: 80px 24px 60px 24px; background: radial-gradient(circle at top right, rgba(255, 165, 0, 0.05), transparent 40%), radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.02), transparent 35%); text-align: center;">
+            <div style="max-width: 800px; margin: 0 auto;">
+                <span style="background: rgba(255, 107, 0, 0.1); color: #d95b00; padding: 6px 16px; border-radius: 9999px; font-size: 14px; font-weight: 600; display: inline-block; margin-bottom: 24px; letter-spacing: 0.5px;">On-Demand Local Home Care</span>
+                <h1 class="responsive-hero-title" style="font-size: 54px; font-weight: 800; color: #111827; line-height: 1.15; margin-bottom: 24px; letter-spacing: -1px;">Everyday help, <span style="background: linear-gradient(135deg, #ff6b00, #ff9e00); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">made simple.</span></h1>
+                <p style="font-size: 19px; color: #4b5563; line-height: 1.6; margin-bottom: 40px; max-width: 650px; margin-left: auto; margin-right: auto;">From cleaning and lawn care to pet check-ins and everyday household tasks, DailyMate connects you with verified local assistants to handle things smoothly.</p>
+                <div style="display: flex; align-items: center; justify-content: center;">
+                    <a href="get-help.html" class="cta-hover-effect" style="background: #ff6b00; color: white; padding: 16px 40px; font-weight: 700; border-radius: 12px; text-decoration: none; font-size: 18px; box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);">Get Help Now</a>
                 </div>
             </div>
-        </div>
+        </section>
+        
+        <!-- INJECTED DYNAMIC SERVICES AREA -->
+        <div id="service-catalog-container" style="padding: 0 16px;"></div>
     </main>
 
     <script src="js/script.js"></script>
+    <script>
+        // Smoothly injects your service cards into the placeholder area above
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("services.html")
+                .then(response => response.text())
+                .then(data => {
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = data;
+                    const servicesContent = tempDiv.querySelector('main') || tempDiv.querySelector('body') || tempDiv;
+                    document.getElementById("service-catalog-container").innerHTML = servicesContent.innerHTML;
+                })
+                .catch(error => console.error("Error linking service component:", error));
+        });
+    </script>
 </body>
 </html>
