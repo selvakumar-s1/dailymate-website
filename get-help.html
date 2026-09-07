@@ -54,52 +54,56 @@
     </header>
 <main class="container">
     <h1 class="section-title">Tell DailyMate what you need</h1>
+    
+    <!-- CARD CONTROLLER FOR THE ASSISTANT FRAME -->
     <div class="card-form" style="padding: 0; background: transparent; box-shadow: none;">
         <div style="width: 100%; max-width: 600px; margin: 20px auto; padding: 0 10px;">
-            <div style="width: 100%; height: 600px; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05); border: 1px solid #e5e7eb;">
+            <!-- CROP ENGINE: REDUCED SCREEN VIEWER MARGINS TO CUT OFF THE BADGE -->
+            <div style="width: 100%; height: 565px; background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.05); border: 1px solid #e5e7eb; position: relative;">
                 <iframe 
-                    src="https://typebot.co/my-typebot-4msduqt" 
-                    style="width: 100%; height: 100%; border: none;" 
+                    src="https://typebot.co" 
+                    style="width: 100%; height: 620px; border: none; position: absolute; top: 0; left: 0;" 
                     allow="geolocation; microphone; camera">
                 </iframe>
             </div>
         </div>
     </div>
-            <!-- PREMIUM PRICING & PAYMENT TRANSPARENCY CARD -->
-        <div style="width: 100%; max-width: 600px; margin: 40px auto 0 auto; padding: 0 10px; font-family: system-ui, -apple-system, sans-serif;">
-            <div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 32px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
-                    <span style="font-size: 24px;">💳</span>
-                    <h3 style="font-size: 20px; color: #111827; margin: 0; font-weight: 700;">Simple, Flat-Rate Pricing</h3>
-                </div>
-                
-                <p style="color: #4b5563; font-size: 15px; line-height: 1.6; margin: 0 0 24px 0;">
-                    At DailyMate, we believe getting help should be completely straightforward. Once you complete your request with our conversational assistant above, our operations team calculates your flat quote based on our local neighborhood rates:
-                </p>
 
-                <!-- OPERATIONAL STEP ROWS -->
-                <div style="display: flex; flex-direction: column; gap: 16px; border-top: 1px solid #f3f4f6; padding-top: 20px;">
-                    <div style="display: flex; gap: 12px;">
-                        <span style="color: #ff6b00; font-weight: bold;">Step 1:</span>
-                        <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Receive an instant flat quote via email from help@dailymate.com.au</p>
-                    </div>
-                    <div style="display: flex; gap: 12px;">
-                        <span style="color: #ff6b00; font-weight: bold;">Step 2:</span>
-                        <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Reply YES to confirm your matched local neighborhood assistant.</p>
-                    </div>
-                    <div style="display: flex; gap: 12px;">
-                        <span style="color: #ff6b00; font-weight: bold;">Step 3:</span>
-                        <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Task completed perfectly! Pay securely via fee-free Direct Bank Transfer.</p>
-                    </div>
-                </div>
+    <!-- PREMIUM PRICING & PAYMENT TRANSPARENCY CARD -->
+    <div style="width: 100%; max-width: 600px; margin: 40px auto 0 auto; padding: 0 10px; font-family: system-ui, -apple-system, sans-serif;">
+        <div style="background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; padding: 32px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
+            <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                <span style="font-size: 24px;">💳</span>
+                <h3 style="font-size: 20px; color: #111827; margin: 0; font-weight: 700;">Simple, Flat-Rate Pricing</h3>
+            </div>
+            
+            <p style="color: #4b5563; font-size: 15px; line-height: 1.6; margin: 0 0 24px 0;">
+                At DailyMate, we believe getting help should be completely straightforward. Once you complete your request with our conversational assistant above, our operations team calculates your flat quote based on our local neighborhood rates:
+            </p>
 
-                <div style="margin-top: 24px; background: #fff7ed; border-radius: 12px; padding: 16px; border: 1px solid #ffedd5; text-align: center;">
-                    <span style="font-size: 14px; color: #c2410c; font-weight: 600;">🔒 Peace of Mind Guarantee: No hidden sign-up fees or subscription lock-ins.</span>
+            <!-- OPERATIONAL STEP ROWS -->
+            <div style="display: flex; flex-direction: column; gap: 16px; border-top: 1px solid #f3f4f6; padding-top: 20px;">
+                <div style="display: flex; gap: 12px;">
+                    <span style="color: #ff6b00; font-weight: bold;">Step 1:</span>
+                    <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Receive an instant flat quote via email from help@dailymate.com.au</p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <span style="color: #ff6b00; font-weight: bold;">Step 2:</span>
+                    <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Reply YES to confirm your matched local neighborhood assistant.</p>
+                </div>
+                <div style="display: flex; gap: 12px;">
+                    <span style="color: #ff6b00; font-weight: bold;">Step 3:</span>
+                    <p style="margin: 0; color: #111827; font-size: 15px; font-weight: 500;">Task completed perfectly! Pay securely via fee-free Direct Bank Transfer.</p>
                 </div>
             </div>
-        </div>
 
+            <div style="margin-top: 24px; background: #fff7ed; border-radius: 12px; padding: 16px; border: 1px solid #ffedd5; text-align: center;">
+                <span style="font-size: 14px; color: #c2410c; font-weight: 600;">🔒 Peace of Mind Guarantee: No hidden sign-up fees or subscription lock-ins.</span>
+            </div>
+        </div>
+    </div>
 </main>
+
 
 </body>
 </html>
