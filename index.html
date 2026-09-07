@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-AU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyMate - Everyday help, made simple.</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="margin: 0; padding: 0; background-color: #ffffff;">
+
+    <!-- MODERN BRANDING HEADER -->
     <header style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(229, 231, 235, 0.5); padding: 16px 24px;">
         <nav style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
             <!-- PREMIUM INLINE CODE EMBED VECTOR LOGO -->
@@ -28,22 +37,7 @@
         </nav>
     </header>
 
-
-
-<body>
-    <header class="header">
-        <nav class="nav-container">
-            <a href="index.html" class="logo">DailyMate</a>
-            <button class="hamburger" aria-label="Toggle Menu">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link active">Home</a></li>
-                <li><a href="services.html" class="nav-link">Services</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="get-help.html" class="btn btn-primary">Get Help</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- MAIN HOMEPAGE WRAPPER -->
     <main style="font-family: system-ui, -apple-system, sans-serif;">
         <!-- MODERN HIGH-CONVERSION HERO SECTION WITH NO SUB-BUTTONS -->
         <section style="padding: 100px 24px 80px 24px; background: radial-gradient(circle at top right, rgba(255, 165, 0, 0.05), transparent 40%), radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.02), transparent 35%); text-align: center;">
@@ -57,25 +51,24 @@
             </div>
         </section>
         
+        <!-- INJECTED DYNAMIC SERVICES AREA -->
         <div id="service-catalog-container"></div>
     </main>
 
-
-
     <script src="js/script.js"></script>
     <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetch("services.html")
-            .then(response => response.text())
-            .then(data => {
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = data;
-                const servicesContent = tempDiv.querySelector('main') || tempDiv.querySelector('body') || tempDiv;
-                document.getElementById("service-catalog-container").innerHTML = servicesContent.innerHTML;
-            })
-            .catch(error => console.error("Error linking service component:", error));
-    });
-</script>
-
+        // Smoothly injects your service cards into the placeholder area above
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("services.html")
+                .then(response => response.text())
+                .then(data => {
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = data;
+                    const servicesContent = tempDiv.querySelector('main') || tempDiv.querySelector('body') || tempDiv;
+                    document.getElementById("service-catalog-container").innerHTML = servicesContent.innerHTML;
+                })
+                .catch(error => console.error("Error linking service component:", error));
+        });
+    </script>
 </body>
 </html>
