@@ -5,8 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DailyMate - Everyday help, made simple.</title>
     <link rel="stylesheet" href="css/style.css">
+        <!-- PREMIUM BRANDED ANIMATION UI SYSTEM -->
+    <style>
+        .animate-nav-link {
+            position: relative;
+            transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .animate-nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #ff6b00;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .animate-nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .cta-hover-effect {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+        }
+        .cta-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 107, 0, 0.4) !important;
+            background: #e05e00 !important;
+        }
+    </style>
+
 </head>
-<body style="margin: 0; padding: 0; background-color: #ffffff;">
+<body style="margin: 0; padding: 0; background: radial-gradient(circle at top right, rgba(255, 158, 0, 0.08), transparent 45%), radial-gradient(circle at bottom left, rgba(99, 102, 241, 0.04), transparent 50%), #fafbfe; min-height: 100vh;">
+
 
     <!-- MODERN BRANDING HEADER -->
     <header style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid rgba(229, 231, 235, 0.5); padding: 16px 24px;">
