@@ -1,70 +1,79 @@
-<!DOCTYPE html>
-<html lang="en-AU">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>What can DailyMate help with?</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header class="header">
-        <nav class="nav-container">
-            <a href="index.html" class="logo">DailyMate</a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="services.html" class="nav-link active">Services</a></li>
-                <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-                <li><a href="about.html" class="nav-link">About</a></li>
-                <li><a href="get-help.html" class="btn btn-primary">Get Help</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="container">
-        <h1 class="section-title">What can DailyMate help with?</h1>
-        <div class="services-grid">
-            <div class="service-card">
-                <div class="service-icon">🧹</div>
-                <h3>Cleaning</h3>
-                <p>Keep your home clean and comfortable with reliable cleaning help.</p>
-                <a href="get-help.html" class="btn btn-secondary btn-sm">Get Help</a>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🌿</div>
-                <h3>Lawn & Garden</h3>
-                <p>Get help keeping your lawn and garden looking its best.</p>
-                <a href="get-help.html" class="btn btn-secondary btn-sm">Get Help</a>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3>Handyman</h3>
-                <p>Help with everyday household maintenance and small jobs.</p>
-                <a href="get-help.html" class="btn btn-secondary btn-sm">Get Help</a>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🐾</div>
-                <h3>Pet Care</h3>
-                <p>Caring help for your pets when you need an extra hand.</p>
-                <a href="pet-care.html" class="btn btn-primary btn-sm">View Details</a>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🚗</div>
-                <h3>Car Care</h3>
-                <p>Convenient help with everyday car-care tasks.</p>
-                <a href="get-help.html" class="btn btn-secondary btn-sm">Get Help</a>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">📦</div>
-                <h3>Moving & Delivery</h3>
-                <p>Help with moving items, pickups and deliveries.</p>
-                <a href="get-help.html" class="btn btn-secondary btn-sm">Get Help</a>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">➕</div>
-                <h3>Other</h3>
-                <p>Need something else? Tell DailyMate what you need.</p>
-                <a href="get-help.html" class="btn btn-secondary btn-sm">Get Help</a>
-            </div>
+<main style="background: #ffffff; padding: 60px 24px;">
+    <div style="max-width: 1200px; margin: 0 auto;">
+        
+        <div style="text-align: center; margin-bottom: 50px;">
+            <h2 style="font-size: 32px; font-weight: 800; letter-spacing: -0.75px; margin-bottom: 12px; font-family: system-ui, sans-serif;">Everything your home needs, in one place.</h2>
         </div>
-    </main>
-</body>
-</html>
+
+        <!-- 5-COLUMN HIGH RESOLUTION PHOTO GRID WITH BOOK NOW PARAMETERS -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 60px; font-family: system-ui, sans-serif;">
+            
+            <!-- Card 1: Cleaning -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                <div>
+                    <div style="font-size: 28px; margin-bottom: 12px;">🧹</div>
+                    <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">Cleaning</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569; padding: 0;">
+                        <li>✓ Regular cleaning</li>
+                        <li>✓ Deep cleaning</li>
+                        <li>✓ End-of-lease</li>
+                    </ul>
+                </div>
+                <a href="get-help.html?serviceType=Cleaning" style="text-decoration: none; color: #ff6b00; font-weight: 700; font-size: 15px; margin-top: 24px; display: inline-block;">Book now &rarr;</a>
+            </div>
+
+            <!-- Card 2: Lawn & Garden -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                <div>
+                    <div style="font-size: 28px; margin-bottom: 12px;">🌱</div>
+                    <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">Lawn & Garden</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569; padding: 0;">
+                        <li>✓ Lawn mowing</li>
+                        <li>✓ Garden care</li>
+                        <li>✓ Weeding & pruning</li>
+                    </ul>
+                </div>
+                <a href="get-help.html?serviceType=Lawn%20Care" style="text-decoration: none; color: #ff6b00; font-weight: 700; font-size: 15px; margin-top: 24px; display: inline-block;">Book now &rarr;</a>
+            </div>
+
+            <!-- Card 3: Handyman -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                <div>
+                    <div style="font-size: 28px; margin-bottom: 12px;">🛠️</div>
+                    <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">Handyman</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569; padding: 0;">
+                        <li>✓ Small repairs</li>
+                        <li>✓ Flatpack assembly</li>
+                        <li>✓ Home fixes</li>
+                    </ul>
+                </div>
+                <a href="get-help.html?serviceType=Handyman" style="text-decoration: none; color: #ff6b00; font-weight: 700; font-size: 15px; margin-top: 24px; display: inline-block;">Book now &rarr;</a>
+            </div>
+
+            <!-- Card 4: Moving & Help -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                <div>
+                    <div style="font-size: 28px; margin-bottom: 12px;">📦</div>
+                    <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">Moving & Help</h3>
+                    <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 14px; color: #475569; padding: 0;">
+                        <li>✓ Moving support</li>
+                        <li>✓ Heavy lifting</li>
+                        <li>✓ Rubbish removal</li>
+                    </ul>
+                </div>
+                <a href="get-help.html?serviceType=Moving" style="text-decoration: none; color: #ff6b00; font-weight: 700; font-size: 15px; margin-top: 24px; display: inline-block;">Book now &rarr;</a>
+            </div>
+
+            <!-- Card 5: And more... -->
+            <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 16px; overflow: hidden; padding: 24px; display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+                <div>
+                    <div style="font-size: 28px; margin-bottom: 12px;">✨</div>
+                    <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 16px;">And more...</h3>
+                    <p style="font-size: 14px; color: #475569; line-height: 1.5; margin: 0;">Pet care sitting, mobile car washing loops, local courier pickups, and unique custom tasks.</p>
+                </div>
+                <a href="get-help.html?serviceType=Custom Assistance" style="text-decoration: none; color: #ff6b00; font-weight: 700; font-size: 15px; margin-top: 24px; display: inline-block;">Book now &rarr;</a>
+            </div>
+
+        </div>
+    </div>
+</main>
